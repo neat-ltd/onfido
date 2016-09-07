@@ -1,6 +1,6 @@
 module Onfido
   class Resource
-    VALID_HTTP_METHODS = %i(get post).freeze
+    VALID_HTTP_METHODS = %i(get post put).freeze
 
     def url_for(path)
       Onfido.endpoint + path
