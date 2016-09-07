@@ -17,7 +17,7 @@ module Onfido
     end
 
     def update(applicant_id, payload)
-      put(url: url_for("applicants/#{applicant_id}"), payload)
+      put(url: url_for("applicants/#{applicant_id}"), payload))
     end
 
     def all(page: 1, per_page: 20)
