@@ -1,3 +1,3 @@
 module Onfido
-  VERSION = '0.6.1'.freeze
+  VERSION = '0.8.2'.freeze
 end
