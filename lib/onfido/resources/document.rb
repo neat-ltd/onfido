@@ -3,7 +3,7 @@ module Onfido
     # with open-uri the file can be a link or an actual file
 
     def create(applicant_id, payload)
-      payload[:file] = open(payload.fetch(:file), 'r')
+      payload[:file] = open(payload.fetch(:file))
       post(
         url: url_for("applicants/#{applicant_id}/documents"),
         payload: payload

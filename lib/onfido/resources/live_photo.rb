@@ -4,7 +4,7 @@ module Onfido
 
     def create(applicant_id, payload)
       payload[:applicant_id] = applicant_id
-      payload[:file] = open(payload.fetch(:file), 'r')
+      payload[:file] = open(payload.fetch(:file))
       post(
         url: url_for("/live_photos"),
         payload: payload
